@@ -5,32 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NOOR Weds ROZY</title>
 
-<!-- ===== OPEN GRAPH META TAGS (PREVIEW CARD) ===== -->
+<!-- Open Graph / Link Preview Metadata -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="NOOR Weds ROZY">
 <meta property="og:description" content="Assalamu Alaikum 🌙
 
 You are warmly invited to the wedding of NOOR Weds ROZY.
 
-View the invitation: https://noorwedsrozy-hytf.vercel.app
+View the invitation: eg link
 
 Your presence will make our day special.">
-<meta property="og:image" content="https://i.ibb.co/3ykXF7t/155693.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1000">
-<meta property="og:image:height" content="500">
-
-<!-- Twitter Card Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NOOR Weds ROZY">
-<meta name="twitter:description" content="Assalamu Alaikum 🌙
-
-You are warmly invited to the wedding of NOOR Weds ROZY.
-
-View the invitation: https://noorwedsrozy-hytf.vercel.app
-
-Your presence will make our day special.">
-<meta name="twitter:image" content="https://i.ibb.co/3ykXF7t/155693.png">
+<meta property="og:image" content="https://example.com/preview-image.jpg"> <!-- Apni image link yahan lagayein -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,94 +32,70 @@ Message: وَخَلَقْنَاكُمْ أَزْوَاجًا / And we created yo
 Families line: Mrs. Majda Khatoon & Late Bashir Ahmed request the pleasure of your company on the auspicious occasion of the Wedding Ceremony of their beloved son
 RSVP: Md. Salim - 9874376430 | Md. Taj - 9830577167 | Md. Feroz - 9681783436 | Anish dewan | Md. Sahid
 Functions: Nikah | 18 Dec 2026 | Friday | 02:00 PM | Sahara Hall
-           Reception | 22 Dec 2026 | Teusday | 08:00 PM | Green Cottage
+            Reception | 22 Dec 2026 | Teusday | 08:00 PM | Green Cottage
 -->
 <style>
 /* ===== TOKENS (Style DNA palette) ===== */
 :root{--bg:#F8E9DA;--card:#FDF4EA;--gold:#9A6A1E;--gold2:#C99A2E;--terra:#C0704A;--sage:#6F8A5A;--blush:#E9A88F;--ink:#5B3F17;--marble:#E8DCC6}
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html,body{overflow-x:hidden;touch-action:manipulation}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:clip}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 16px/1.7 'Poppins',sans-serif;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);position:relative;word-break:break-word}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.7 'Poppins',sans-serif;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);position:relative}
 body.locked{overflow:hidden;height:100vh}
 :focus-visible{outline:3px solid var(--terra);outline-offset:3px}
 section{position:relative;z-index:2;padding:72px 20px;max-width:760px;margin:0 auto;text-align:center}
 h2{font:500 clamp(30px,8vw,44px)/1.15 'Cormorant Garamond',serif;color:var(--gold);letter-spacing:.06em;margin-bottom:8px}
 .script{font-family:'Pinyon Script',cursive;color:var(--gold)}
 .ar{font-family:'Amiri',serif;direction:rtl;color:var(--terra)}
-.card{background:var(--card);border:1px solid var(--gold2);border-radius:120px 120px 18px 18px/60px 60px 18px 18px;padding:34px 22px;box-shadow:0 10px 30px rgba(154,106,30,.12);overflow:hidden;word-wrap:break-word}
+.card{background:var(--card);border:1px solid var(--gold2);border-radius:120px 120px 18px 18px/60px 60px 18px 18px;padding:34px 22px;box-shadow:0 10px 30px rgba(154,106,30,.12)}
 .card.flat{border-radius:18px;padding:22px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 22px;margin:10px auto;border:1px solid var(--gold);border-radius:24px;background:var(--gold);color:#FFF6E8;font:500 13.5px/1.2 'Poppins',sans-serif;text-decoration:none;cursor:pointer;letter-spacing:.04em;touch-action:manipulation;user-select:none;max-width:calc(100% - 24px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;margin:8px;border:1px solid var(--gold);border-radius:30px;background:var(--gold);color:#FFF6E8;font:500 15px 'Poppins',sans-serif;text-decoration:none;cursor:pointer;letter-spacing:.04em}
 .btn.alt{background:transparent;color:var(--gold)}
 .lbl{font-size:14px;color:var(--sage);letter-spacing:.12em;text-transform:uppercase;font-weight:500}
 .grid{display:grid;gap:18px}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
 .reveal.in{opacity:1;transform:none}
-
 /* ===== OPENING GATE ===== */
 #gate{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:transparent;transition:opacity .8s ease .9s}
 #gate .door{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(135deg,var(--marble),var(--bg));transition:transform 1.4s cubic-bezier(.7,0,.2,1)}
 #gate .l{left:0;border-right:2px solid var(--gold2)}#gate .r{right:0;border-left:2px solid var(--gold2)}
 #gate.open .l{transform:translateX(-101%)}#gate.open .r{transform:translateX(101%)}
 #gate.open{opacity:0;pointer-events:none}
-#seal{position:relative;z-index:2;width:130px;height:130px;border-radius:50%;border:3px double var(--gold2);background:radial-gradient(circle at 35% 30%,#d68a63,var(--terra) 60%,#8f4a2b);color:#FFF6E8;font:600 28px 'Cormorant Garamond',serif;cursor:pointer;transition:box-shadow .5s;touch-action:manipulation;-webkit-user-select:none;user-select:none}
+
+.seal-container{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;}
+#seal{position:relative;z-index:2;width:130px;height:130px;border-radius:50%;border:3px double var(--gold2);background:radial-gradient(circle at 35% 30%,#d68a63,var(--terra) 60%,#8f4a2b);color:#FFF6E8;font:600 28px 'Cormorant Garamond',serif;cursor:pointer;transition:box-shadow .5s}
 #seal.glow{box-shadow:0 0 50px 20px rgba(201,154,46,.7)}
 
-/* Cute Hand Tap Animation */
-.tap-wrapper{position:relative;display:inline-flex;align-items:center;justify-content:center}
-.tap-hand-cute{position:absolute;bottom:-15px;right:-25px;z-index:4;width:74px;height:74px;pointer-events:none;transform-origin:75% 75%;animation:cuteTap 2s infinite ease-in-out;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.15))}
-.tap-pulse-ring{position:absolute;top:-8px;left:-8px;width:52px;height:52px;border:3px solid rgba(255,255,255,0.85);border-radius:50%;opacity:0;animation:ringPulse 2s infinite ease-out}
-.tap-pulse-ring.r2{top:-16px;left:-16px;width:68px;height:68px;border-width:2px;animation-delay:0.3s}
-
-@keyframes cuteTap{
- 0%,100%{transform:translate(0,0) scale(1) rotate(0deg)}
- 35%{transform:translate(-16px,-18px) scale(1) rotate(-8deg)}
- 45%{transform:translate(-24px,-26px) scale(0.85) rotate(-12deg)}
- 55%{transform:translate(-20px,-22px) scale(0.95) rotate(-6deg)}
- 70%{transform:translate(-24px,-26px) scale(0.85) rotate(-12deg)}
- 85%{transform:translate(0,0) scale(1) rotate(0deg)}
-}
-
-@keyframes ringPulse{
- 0%,40%{opacity:0;transform:scale(0.5)}
- 46%{opacity:1}
- 70%,100%{opacity:0;transform:scale(1.4)}
-}
-
-#gate p{position:absolute;bottom:14%;z-index:2;color:var(--gold);font-size:14px;letter-spacing:.15em;font-weight:500}
+#gate p{position:absolute;bottom:14%;z-index:2;color:var(--gold);font-size:14px;letter-spacing:.15em}
 .spark{position:fixed;width:8px;height:8px;z-index:101;pointer-events:none;background:var(--gold2);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:burst 1.2s ease-out forwards}
 @keyframes burst{to{transform:translate(var(--x),var(--y)) scale(.2);opacity:0}}
-
 /* ===== HERO ===== */
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:none;overflow:hidden;padding:40px 16px}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:none;overflow:hidden}
 .hero .bg{position:absolute;inset:-10% 0;z-index:-1;will-change:transform;background:
  radial-gradient(60% 40% at 8% 4%,rgba(233,168,143,.55),transparent 70%),radial-gradient(60% 40% at 94% 6%,rgba(111,138,90,.35),transparent 70%),
  radial-gradient(70% 30% at 50% 100%,rgba(111,138,90,.45),transparent 70%),radial-gradient(40% 25% at 5% 95%,rgba(233,168,143,.5),transparent 70%)}
 .arch{position:absolute;inset:6% 8%;z-index:-1;border:3px solid var(--gold2);border-radius:999px 999px 0 0/260px 260px 0 0;opacity:.7}
-.names{font-size:clamp(44px,14vw,104px);line-height:1.05;margin:10px 0;font-weight:400;word-break:normal}
+.names{font-size:clamp(52px,16vw,104px);line-height:1.05;margin:10px 0;font-weight:400}
 .names span{display:block;font:400 .3em 'Cormorant Garamond',serif;letter-spacing:.3em;color:var(--terra);margin:2px 0}
-.date{font:500 clamp(16px,4.5vw,20px) 'Cormorant Garamond',serif;letter-spacing:.08em;margin-bottom:6px}
-.hint{margin-top:20px;font-size:13px;color:var(--gold);animation:bob 2.6s ease-in-out infinite}
+.date{font:500 20px 'Cormorant Garamond',serif;letter-spacing:.1em}
+.hint{margin-top:26px;font-size:14px;color:var(--gold);animation:bob 2.6s ease-in-out infinite}
 @keyframes bob{50%{transform:translateY(8px)}}
-
 /* ===== COUNTDOWN ===== */
-.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px 0}
-.cd div{background:var(--card);border:1px solid var(--gold2);border-radius:40px 40px 12px 12px;padding:12px 2px}
-.cd b{display:block;font:500 clamp(22px,7vw,44px)/1 'Cormorant Garamond',serif;color:var(--gold)}
-.cd i{font-style:normal;font-size:12px;color:var(--sage)}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0}
+.cd div{background:var(--card);border:1px solid var(--gold2);border-radius:60px 60px 12px 12px;padding:16px 2px}
+.cd b{display:block;font:500 clamp(28px,9vw,44px)/1 'Cormorant Garamond',serif;color:var(--gold)}
+.cd i{font-style:normal;font-size:14px;color:var(--sage)}
 .cd.over{display:block}
 .done{font:400 44px 'Pinyon Script',cursive;color:var(--terra)}
-
 /* ===== VENUE / MAP / EVENTS ===== */
-.mapcard{display:block;margin:18px 0;text-decoration:none;-webkit-touch-callout:none}
+.mapcard{display:block;margin:18px 0}
 .mapcard svg{width:100%;height:auto;border-radius:18px;border:1px solid var(--gold2)}
 .tl{position:relative;text-align:left;padding-left:56px}
 .tl:before{content:"";position:absolute;left:21px;top:10px;bottom:10px;border-left:2px dashed var(--gold2)}
 .ev{position:relative;margin-bottom:24px}
 .ev .n{position:absolute;left:-56px;top:6px;width:44px;height:44px;border-radius:50%;background:var(--gold);color:#FFF6E8;display:flex;align-items:center;justify-content:center;font:600 20px 'Cormorant Garamond',serif}
 .ev h3{font:500 28px 'Cormorant Garamond',serif;color:var(--gold)}
-.ev a{color:var(--terra);display:inline-flex;min-height:44px;align-items:center;font-weight:500;text-decoration:underline}
-
+.ev a{color:var(--terra);display:inline-flex;min-height:44px;align-items:center}
 /* ===== COUPLE / ALBUM ===== */
 .two{grid-template-columns:1fr}
 .port{width:140px;height:170px;margin:0 auto 12px;display:block}
@@ -147,8 +108,7 @@ h2{font:500 clamp(30px,8vw,44px)/1.15 'Cormorant Garamond',serif;color:var(--gol
 #lb button{min-width:48px;min-height:48px;border-radius:30px;border:1px solid var(--gold2);background:transparent;color:#fff;font-size:18px;cursor:pointer}
 footer{padding-bottom:110px}
 .quote .ar{font-size:34px;line-height:1.8}
-
-/* ===== EFFECT LAYERS ===== */
+/* ===== EFFECT LAYERS (never capture clicks) ===== */
 #path{position:absolute;left:0;top:0;pointer-events:none;z-index:3}
 #fx,#glow{position:fixed;inset:0;pointer-events:none}
 #fx{z-index:4;overflow:hidden}
@@ -159,16 +119,8 @@ footer{padding-bottom:110px}
 @keyframes tw{0%,100%{opacity:.1;transform:scale(.5)}50%{opacity:.9;transform:scale(1)}}
 .lant{position:absolute;bottom:-80px;width:34px;height:48px;border-radius:10px 10px 14px 14px;background:linear-gradient(#ffe7a0,var(--gold2));box-shadow:0 0 28px 10px rgba(255,200,90,.6);animation:up 7s ease-in forwards}
 @keyframes up{to{transform:translateY(-120vh);opacity:0}}
-
 @media(min-width:700px){.two{grid-template-columns:1fr 1fr}.gal{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:480px){
- body{font-size:14.5px}
- section{padding:48px 16px}
- .card{padding:26px 16px;border-radius:90px 90px 16px 16px/45px 45px 16px 16px}
- .btn{width:auto;max-width:calc(100% - 24px);padding:0 18px;font-size:13px;min-height:40px;margin:8px auto;display:inline-flex}
- #rsvp .btn{font-size:13px;padding:0 16px;width:100%;max-width:280px;display:flex}
-}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}#gate,#gate .door{transition:none}.hint,.tap-hand-cute,.tap-pulse-ring{animation:none}#fx,#glow{display:none}.hero .bg{transform:none!important}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}#gate,#gate .door{transition:none}.hint{animation:none}#fx,#glow{display:none}.hero .bg{transform:none!important}}
 </style>
 </head>
 <body class="locked">
@@ -176,19 +128,10 @@ footer{padding-bottom:110px}
 <!-- ===== OPENING GATE ===== -->
 <div id="gate" role="dialog" aria-label="Open invitation">
  <div class="door l"></div><div class="door r"></div>
- <div class="tap-wrapper">
+ <div class="seal-container">
    <button id="seal" aria-label="Open the invitation">N&amp;R</button>
-   <div class="tap-hand-cute" aria-hidden="true">
-     <svg viewBox="0 0 100 100" width="74" height="74" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <div class="tap-pulse-ring"></div>
-       <div class="tap-pulse-ring r2"></div>
-       <path d="M48 24C48 20.6863 50.6863 18 54 18C57.3137 18 60 20.6863 60 24V46.5C60 46.5 64.5 41.5 69.5 41.5C74.5 41.5 76 45.5 76 49.5C76 54 71.5 58 71.5 58C71.5 58 76.5 59.5 76.5 65.5C76.5 71.5 70.5 74.5 70.5 74.5C70.5 74.5 74.5 77.5 72.5 83.5C70.5 89.5 61.5 91 55 91C44.5 91 36.5 81.5 31.5 74.5L20.5 58.5C18.5 55.5 20.5 51.5 24.5 52.5L34.5 56.5V28.5C34.5 25.1863 37.1863 22.5 40.5 22.5C43.8137 22.5 46.5 25.1863 46.5 28.5V45" stroke="#6F8A5A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-       <circle cx="36" cy="18" r="12" stroke="#6F8A5A" stroke-width="3" stroke-dasharray="4 3" opacity="0.7"/>
-       <circle cx="36" cy="18" r="6" stroke="#6F8A5A" stroke-width="3.5"/>
-     </svg>
-   </div>
  </div>
- <p>TAP TO OPEN</p>
+ <p>TAP THE SEAL</p>
 </div>
 
 <!-- ===== FLIGHT PATH ===== -->
@@ -202,7 +145,7 @@ footer{padding-bottom:110px}
 <section class="hero" id="top">
  <div class="bg"></div><div class="arch"></div>
  <p class="ar" style="font-size:clamp(28px,8vw,44px)">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
- <p class="lbl">Bismillah Hirrah Maaniraheem</p>
+ <p class="lbl">In the name of Allah, the Most Gracious, the Most Merciful</p>
  <h1 class="names script">Noor<span>Weds</span>Rozy</h1>
  <p class="lbl">Wedding Reception Invitation</p>
  <p class="date">18 December 2026, 02:00 PM IST</p>
@@ -256,7 +199,7 @@ footer{padding-bottom:110px}
  </div>
 </section>
 
-<!-- ===== ALBUM (hidden until pictures load) ===== -->
+<!-- ===== ALBUM (stays hidden until photo1.jpg..photo5.jpg load) ===== -->
 <section id="album" hidden>
  <h2 class="reveal">Album</h2>
  <div class="grid gal" id="gal"></div>
@@ -279,35 +222,119 @@ footer{padding-bottom:110px}
 'use strict';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const mobile=innerWidth<700;
 
 /* ===== OPENING GATE ===== */
 const gate=$('#gate'),seal=$('#seal');let opened=false;
 function open(){
  if(opened)return;opened=true;seal.classList.add('glow');
  if(!RM)for(let i=0;i<28;i++){const s=document.createElement('i');s.className='spark';const a=i/28*6.28,d=80+Math.random()*130;
-  s.style.cssText=`left:${innerWidth/2}px;top:${innerHeight/2}px;--x:${Math.cos(a)*d}px;--y:${Math.sin(a)*d}px`;document.body.appendChild(s);setTimeout(()=>s.remove(),1200)}
- setTimeout(()=>{gate.classList.add('open');document.body.classList.remove('locked')},600)
+  s.style.cssText=`left:${innerWidth/2}px;top:${innerHeight/2}px;--x:${Math.cos(a)*d}px;--y:${Math.sin(a)*d}px`;document.body.appendChild(s);setTimeout(()=>s.remove(),1300)}
+ setTimeout(()=>{gate.classList.add('open');document.body.classList.remove('locked');start()},RM?0:500);
+ setTimeout(()=>gate.remove(),RM?50:2600);
 }
 seal.addEventListener('click',open);
+document.addEventListener('keydown',e=>{if(!opened&&(e.key==='Enter'||e.key===' ')){e.preventDefault();open()}});
 
-/* ===== REVEAL ON SCROLL ===== */
-const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');obs.unobserve(x.target)}}),{threshold:.15});
-$$('.reveal').forEach(el=>obs.observe(el));
+/* ===== COUNTDOWN (fixed +05:30 IST) ===== */
+const cds=$$('.cd');
+function tick(){cds.forEach(el=>{
+ const ms=new Date(el.dataset.t)-Date.now();
+ if(ms<=0){el.classList.add('over');el.innerHTML='<span class="done">Just Married</span>';return}
+ const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;
+ el.innerHTML=[[d,'Days'],[h,'Hours'],[m,'Minutes'],[s,'Seconds']].map(x=>`<div><b>${String(x[0]).padStart(2,'0')}</b><i>${x[1]}</i></div>`).join('')})}
+tick();setInterval(tick,1000);
 
-/* ===== COUNTDOWN TIMERS ===== */
-$$('.cd').forEach(el=>{
- const target=new Date(el.dataset.t).getTime();
- function update(){
-  const now=new Date().getTime(),diff=target-now;
-  if(diff<=0){el.innerHTML='<span class="done">The Day Has Arrived!</span>';return;}
-  const d=Math.floor(diff/(1000*60*60*24));
-  const h=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-  const m=Math.floor((diff%(1000*60*60))/(1000*60));
-  const s=Math.floor((diff%(1000*60))/1000);
-  el.innerHTML=`<div><b>${d}</b><i>Days</i></div><div><b>${h}</b><i>Hours</i></div><div><b>${m}</b><i>Mins</i></div><div><b>${s}</b><i>Secs</i></div>`;
- }
- update();setInterval(update,1000);
+/* ===== ICS CALENDAR (times converted from IST to UTC) ===== */
+$('#ics').addEventListener('click',()=>{
+ const ev=[['Nikah','20261218T083000Z','20261218T113000Z','Sahara Hall\\, 34D\\, Mominpore road\\, Opp. Dotalla Masjid'],['Reception','20261222T143000Z','20261222T173000Z','Green Cottage\\, 58\\, Ekbalpore\\, Khidderpore Kolkata - 700 023']];
+ const t=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Noor Weds Rozy//EN'];
+ ev.forEach((e,i)=>t.push('BEGIN:VEVENT','UID:nr'+i+'@invite','DTSTAMP:20260101T000000Z','DTSTART:'+e[1],'DTEND:'+e[2],'SUMMARY:'+e[0]+' - Noor Weds Rozy','LOCATION:'+e[3],'END:VEVENT'));
+ t.push('END:VCALENDAR');
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t.join('\r\n')],{type:'text/calendar'}));a.download='Noor-Weds-Rozy.ics';a.click();
 });
+
+/* ===== RSVP ===== */
+const msg=encodeURIComponent('Hi, I will attend the wedding of Rozy and Noor.');
+$('#rsvp').innerHTML=[['Md. Salim','9874376430'],['Md. Taj','9830577167'],['Md. Feroz','9681783436'],['Anish dewan'],['Md. Sahid']].map(r=>r[1]?`<a class="btn" href="https://wa.me/91${r[1]}?text=${msg}" target="_blank" rel="noopener">${r[0]}
+${r[1]}</a>`:`<p>${r[0]}</p>`).join('');
+
+/* ===== ALBUM + LIGHTBOX ===== */
+const pics=[];let cur=0;const gal=$('#gal'),lb=$('#lb');
+for(let i=1;i<=5;i++){const im=new Image();im.alt='Wedding photo '+i;im.style.objectPosition='50% 25%';
+ im.onload=()=>{const b=document.createElement('button');b.setAttribute('aria-label','Open photo '+i);const idx=pics.length;pics.push(im.src);b.appendChild(im);b.onclick=()=>show(idx);gal.appendChild(b);$('#album').hidden=false;build()};
+ im.src='photo'+i+'.jpg'}
+function show(i){cur=(i+pics.length)%pics.length;lb.classList.add('on');lb.querySelector('img').src=pics[cur];lb.querySelector('img').alt='Wedding photo '+(cur+1);$('#ct').textContent=(cur+1)+' / '+pics.length}
+$('#pv').onclick=()=>show(cur-1);$('#nx').onclick=()=>show(cur+1);$('#cl').onclick=()=>lb.classList.remove('on');
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+let sx=0;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(cur+(d<0?1:-1))},{passive:true});
+
+/* ===== SCROLL REVEAL ===== */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.style.transitionDelay=(Math.min([...e.target.parentNode.children].indexOf(e.target),4)*.12)+'s';e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+$$('.reveal').forEach(el=>RM?el.classList.add('in'):io.observe(el));
+
+/* ===== PLANE FLIGHT PATH ===== */
+const svg=$('#path'),base=$('#base'),trail=$('#trail'),pl=$('#pl');let L=0;
+function build(){
+ const W=document.documentElement.clientWidth,H=document.documentElement.scrollHeight,seg=Math.max(600,H/7),n=Math.ceil(H/seg);
+ svg.setAttribute('width',W);svg.setAttribute('height',H);
+ let d='M'+W*.1+',0';
+ for(let i=0;i<n;i++){const x=(i%2?.1:.9)*W,y0=i*seg,y1=Math.min(H,(i+1)*seg),mid=y0+(y1-y0)/2;d+=` C${(i%2?.9:.1)*W},${mid} ${x},${mid} ${x},${y1}`}
+ base.setAttribute('d',d);trail.setAttribute('d',d);L=base.getTotalLength();place();
+}
+function place(){
+ if(!L)return;const H=document.documentElement.scrollHeight;
+ const p=Math.min(1,Math.max(0,(scrollY+innerHeight*.42)/H)),l=p*L,a=base.getPointAtLength(l),b=base.getPointAtLength(Math.min(L,l+3));
+ pl.setAttribute('transform',`translate(${a.x},${a.y}) rotate(${Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI})`);
+ trail.setAttribute('stroke-dasharray','12 8');
+ trail.style.clipPath='';trail.setAttribute('stroke-dashoffset',0);
+ trail.setAttribute('stroke-opacity',l>5?.5:0);
+ /* only the travelled stretch of the dashed trail is visible */
+ trail.style.maskImage='';trail.dataset.l=l;trailMask(l);
+}
+function trailMask(l){/* draw travelled stretch via a second dash pattern on a clone-free approach: scale path by pathLength */
+ trail.setAttribute('pathLength',L);
+ trail.setAttribute('stroke-dasharray','12 8');
+ trail.style.strokeDasharray='12 8';
+ trail.style.strokeDashoffset='0';
+ trail.setAttribute('d',trail.getAttribute('d'));
+ trail.style.clipPath='none';
+ trail.style.opacity=1;
+ trail.style.display='';
+ trail.style.setProperty('--l',l);
+ /* travelled-length window using a mask-free dash: repeat dashes, but hide beyond l */
+ trail.style.strokeDasharray=dashUpTo(l);
+}
+function dashUpTo(l){const out=[];let t=0;while(t+20<=l&&out.length<4000){out.push(12,8);t+=20}out.push(Math.max(0,Math.min(12,l-t)),L);return out.join(' ')}
+addEventListener('scroll',()=>requestAnimationFrame(place),{passive:true});
+addEventListener('resize',build);addEventListener('load',build);build();
+new ResizeObserver(build).observe(document.body);
+
+/* ===== PETALS, GLITTER, PARALLAX, GLOW (after reveal) ===== */
+function start(){
+ if(RM)return;const fx=$('#fx');
+ for(let i=0;i<(mobile?10:18);i++){const p=document.createElement('i');p.className='petal';p.style.cssText=`left:${Math.random()*100}%;animation-duration:${14+Math.random()*10}s;animation-delay:${-Math.random()*20}s`;fx.appendChild(p)}
+ for(let i=0;i<30;i++){const s=document.createElement('i');s.className='tw';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${3+Math.random()*4}s;animation-delay:${-Math.random()*5}s;${i%3?'':'background:#C0704A'}`;fx.appendChild(s)}
+ const bg=$('.hero .bg');addEventListener('scroll',()=>{if(scrollY<innerHeight*1.5)bg.style.transform=`translate3d(0,${scrollY*.35}px,0)`},{passive:true});
+ glow();
+}
+/* candle-glow cursor trail; sleeps when idle */
+function glow(){
+ const c=$('#glow'),x=c.getContext('2d'),dpr=Math.min(devicePixelRatio||1,2);let pts=[],rip=[],run=false;
+ function size(){c.width=innerWidth*dpr;c.height=innerHeight*dpr;x.setTransform(dpr,0,0,dpr,0,0)}size();addEventListener('resize',size);
+ function wake(){if(!run){run=true;requestAnimationFrame(loop)}}
+ addEventListener('mousemove',e=>{pts.push({x:e.clientX,y:e.clientY,a:1});if(pts.length>40)pts.shift();wake()},{passive:true});
+ addEventListener('touchstart',e=>{rip.push({x:e.touches[0].clientX,y:e.touches[0].clientY,r:4,a:.7});wake()},{passive:true});
+ function loop(t){
+  x.clearRect(0,0,innerWidth,innerHeight);const fl=.85+.15*Math.sin(t/120);
+  pts=pts.filter(p=>p.a>.03);pts.forEach(p=>{p.a*=.92;const g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,34*fl);g.addColorStop(0,`rgba(255,196,110,${.3*p.a})`);g.addColorStop(1,'rgba(255,196,110,0)');x.fillStyle=g;x.fillRect(p.x-40,p.y-40,80,80)});
+  rip=rip.filter(r=>r.a>.02);rip.forEach(r=>{r.r+=2;r.a*=.94;x.strokeStyle=`rgba(201,154,46,${r.a})`;x.lineWidth=2;x.beginPath();x.arc(r.x,r.y,r.r,0,6.28);x.stroke()});
+  if(pts.length||rip.length)requestAnimationFrame(loop);else run=false;
+ }
+}
+
+/* ===== WISH LANTERNS ===== */
+$('#lantern').addEventListener('click',()=>{if(RM)return;for(let i=0;i<3;i++){const l=document.createElement('i');l.className='lant';l.style.left=(20+i*30+Math.random()*10)+'%';l.style.animationDelay=i*.6+'s';$('#fx').appendChild(l);setTimeout(()=>l.remove(),8000)}});
 })();
 </script>
 </body>
