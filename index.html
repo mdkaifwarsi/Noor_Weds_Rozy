@@ -268,4 +268,47 @@ footer{padding-bottom:110px}
  <p class="reveal">18 December 2026 · SAHARA HALL</p>
  <p class="lbl reveal" style="margin-top:26px">RSVP on WhatsApp</p>
  <div id="rsvp" class="reveal"></div>
- <button class="btn alt" id="lantern">Release a Wish Lantern</b
+ <button class="btn alt" id="lantern">Release a Wish Lantern</button>
+</section></footer>
+</main>
+
+<div id="lb" role="dialog" aria-label="Photo viewer"><img alt=""><div class="bar"><button id="pv" aria-label="Previous">‹</button><span id="ct"></span><button id="nx" aria-label="Next">›</button><button id="cl" aria-label="Close">✕</button></div></div>
+
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ===== OPENING GATE ===== */
+const gate=$('#gate'),seal=$('#seal');let opened=false;
+function open(){
+ if(opened)return;opened=true;seal.classList.add('glow');
+ if(!RM)for(let i=0;i<28;i++){const s=document.createElement('i');s.className='spark';const a=i/28*6.28,d=80+Math.random()*130;
+  s.style.cssText=`left:${innerWidth/2}px;top:${innerHeight/2}px;--x:${Math.cos(a)*d}px;--y:${Math.sin(a)*d}px`;document.body.appendChild(s);setTimeout(()=>s.remove(),1200)}
+ setTimeout(()=>{gate.classList.add('open');document.body.classList.remove('locked')},600)
+}
+seal.addEventListener('click',open);
+
+/* ===== REVEAL ON SCROLL ===== */
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');obs.unobserve(x.target)}}),{threshold:.15});
+$$('.reveal').forEach(el=>obs.observe(el));
+
+/* ===== COUNTDOWN TIMERS ===== */
+$$('.cd').forEach(el=>{
+ const target=new Date(el.dataset.t).getTime();
+ function update(){
+  const now=new Date().getTime(),diff=target-now;
+  if(diff<=0){el.innerHTML='<span class="done">The Day Has Arrived!</span>';return;}
+  const d=Math.floor(diff/(1000*60*60*24));
+  const h=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  const m=Math.floor((diff%(1000*60*60))/(1000*60));
+  const s=Math.floor((diff%(1000*60))/1000);
+  el.innerHTML=`<div><b>${d}</b><i>Days</i></div><div><b>${h}</b><i>Hours</i></div><div><b>${m}</b><i>Mins</i></div><div><b>${s}</b><i>Secs</i></div>`;
+ }
+ update();setInterval(update,1000);
+});
+})();
+</script>
+</body>
+</html>
